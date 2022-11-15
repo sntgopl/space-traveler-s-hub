@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import image from '../images/planet.png';
 import '../stylesheets/NavBar.css';
 
@@ -10,9 +10,9 @@ const NavBar = () => (
     </div>
     <div className="navList">
       <ul>
-        <Link to="/">Rockets</Link>
-        <Link to="/missions">Missions</Link>
-        <Link to="/profile">My Profile</Link>
+        <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/">Rockets</NavLink>
+        <NavLink to="/missions">Missions</NavLink>
+        <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/profile">My Profile</NavLink>
       </ul>
     </div>
   </nav>
