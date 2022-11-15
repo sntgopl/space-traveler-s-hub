@@ -12,7 +12,9 @@ const RocketsContainer = () => {
   }, [dispatch, rockets.length]);
   return (
     <>
-      <p>David</p>
+      {rockets.map((rocket) => (
+        <p key={rocket.id}>{rocket.name}</p>
+      ))}
     </>
   );
 };
