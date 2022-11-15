@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navTitle {
+  display: flex;
+}
+
+.navTitle img {
+  width: 70px;
+}
+
+.navList ul {
+  display: flex;
+  padding: 0 20px;
+  gap: 20px;
+}
