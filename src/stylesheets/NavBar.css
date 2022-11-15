@@ -17,3 +17,12 @@ nav {
   padding: 0 20px;
   gap: 20px;
 }
+
+.navList ul > * {
+  text-decoration: none;
+}
+
+.activeLink {
+  opacity: 0.5;
+  border-bottom: 1px solid;
+}
