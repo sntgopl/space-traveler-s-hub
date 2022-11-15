@@ -16,9 +16,18 @@ export const getRocket = createAsyncThunk(GET_ROCKET, async () => {
 });
 
 const rocketReducer = (state = initialState, action) => {
+  let list = [];
   switch (action.type) {
     case `${GET_ROCKET}/fulfilled`:
-      return action.payload;
+      list = action.payload.map((element) => {
+        const rocket = {};
+        rocket.id = element.id;
+        rocket.name = element.rocket_name;
+        rocket.type = element.rocket_type;
+        rocket.image = element.flickr_images;
+        return rocket;
+      });
+      return list;
     default:
       return state;
   }
