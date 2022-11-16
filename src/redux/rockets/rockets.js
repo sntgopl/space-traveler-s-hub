@@ -25,6 +25,7 @@ const rocketReducer = (state = initialState, action) => {
         rocket.name = element.rocket_name;
         rocket.type = element.rocket_type;
         rocket.image = element.flickr_images;
+        rocket.description = element.description;
         return rocket;
       });
       return list;

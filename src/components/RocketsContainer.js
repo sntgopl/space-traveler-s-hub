@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRocket } from '../redux/rockets/rockets';
+import Rocket from './Rocket';
 
 const RocketsContainer = () => {
   const rockets = useSelector((state) => state.rocket);
@@ -13,7 +14,14 @@ const RocketsContainer = () => {
   return (
     <>
       {rockets.map((rocket) => (
-        <p key={rocket.id}>{rocket.name}</p>
+        <Rocket
+          key={rocket.id}
+          id={rocket.id}
+          name={rocket.name}
+          type={rocket.type}
+          img={rocket.image}
+          description={rocket.description}
+        />
       ))}
     </>
   );
