@@ -2,11 +2,10 @@ import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 
 const Mission = ({
-  name, description, id,
+  name, description,
 }) => (
   <tr>
     <td>
-      {id}
       {name}
     </td>
     <td>{description}</td>
@@ -18,7 +17,6 @@ const Mission = ({
 Mission.propTypes = {
   name: PropTypes.node.isRequired,
   description: PropTypes.node.isRequired,
-  id: PropTypes.node.isRequired,
 };
 
 export default Mission;
