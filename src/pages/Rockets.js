@@ -1,6 +1,8 @@
+import RocketsContainer from '../components/RocketsContainer';
+
 const Rockets = () => (
   <div>
-    Rockets
+    <RocketsContainer />
   </div>
 );
 
