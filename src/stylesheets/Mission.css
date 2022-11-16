@@ -1,0 +1,12 @@
+table {
+  margin-left: 5vw;
+  max-width: 90vw;
+}
+
+td {
+  min-width: 10vw;
+}
+
+th {
+  min-width: 10vw;
+}
