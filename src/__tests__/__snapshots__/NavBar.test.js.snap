@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test snapshot should render Rocket Container 1`] = `
+<nav>
+  <div
+    className="navTitle"
+  >
+    <img
+      alt="planet"
+      src="planet.png"
+    />
+    <h1>
+      Space Traveler\`s Hub
+    </h1>
+  </div>
+  <div
+    className="navList"
+  >
+    <ul>
+      <a
+        aria-current="page"
+        className="activeLink"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+      <a
+        className=""
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+      <a
+        className=""
+        href="/profile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </ul>
+  </div>
+</nav>
+`;
