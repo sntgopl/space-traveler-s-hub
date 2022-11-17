@@ -38,14 +38,14 @@ const rocketReducer = (state = initialState, action) => {
         return rocket;
       });
       return [...state, ...list];
-    case `${RESERVE_ROCKET}/fulfilled`:
+    case RESERVE_ROCKET:
       reserve = state.map((element) => {
         if (element.id !== action.payload) {
           return element;
         }
         return { ...element, reserved: true };
       });
-      return [...state, ...reserve];
+      return reserve;
     default:
       return state;
   }
