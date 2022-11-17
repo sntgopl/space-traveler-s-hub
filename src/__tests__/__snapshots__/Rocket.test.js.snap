@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test snapshot should render Rocket Container 1`] = `
+<div
+  className="rocket"
+>
+  <img
+    alt="rocket"
+    src="url test"
+  />
+  <div>
+    <h2>
+      Rocket test
+    </h2>
+    <p>
+       
+       
+      It is a rocket
+    </p>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</div>
+`;
