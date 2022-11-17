@@ -16,10 +16,12 @@ const MissionContainer = () => {
     <div className="table">
       <Table striped bordered>
         <thead>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th>Function</th>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Function</th>
+          </tr>
         </thead>
         <tbody>
           {missions.map((mission) => (

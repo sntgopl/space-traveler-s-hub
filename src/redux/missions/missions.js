@@ -40,7 +40,7 @@ const missionReducer = (state = initialState, action) => {
         mission.id = element.mission_id;
         mission.name = element.mission_name;
         mission.description = element.description;
-        return { ...mission, status: false };
+        return { ...mission, reserved: false };
       });
       return list;
     case JOIN_MISSION:

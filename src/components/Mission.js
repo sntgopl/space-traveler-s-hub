@@ -35,7 +35,7 @@ const Mission = ({
           onClick={() => dispatch(leaveMission(id))}
           variant="outline-danger"
         >
-          Join Mission
+          Leave Mission
         </Button>
         )}
 
@@ -48,7 +48,7 @@ Mission.propTypes = {
   name: PropTypes.node.isRequired,
   description: PropTypes.node.isRequired,
   id: PropTypes.node.isRequired,
-  reserved: PropTypes.node.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 
 export default Mission;
