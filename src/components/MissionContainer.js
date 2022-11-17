@@ -28,6 +28,7 @@ const MissionContainer = () => {
               id={mission.id}
               name={mission.name}
               description={mission.description}
+              reserved={mission.reserved}
             />
           ))}
         </tbody>
