@@ -28,7 +28,7 @@ const rocketReducer = (state = initialState, action) => {
         rocket.description = element.description;
         return rocket;
       });
-      return list;
+      return [...state, ...list];
     default:
       return state;
   }
