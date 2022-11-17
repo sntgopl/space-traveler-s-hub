@@ -42,6 +42,23 @@ describe('test with testing library', () => {
     expect(screen.getByText('Cancel Reservation')).toBeInTheDocument();
   });
 
+  it('should change show reserved', () => {
+    render(
+      <Provider store={store}>
+        <Rocket
+          key={1}
+          id={1}
+          name="Rocket test"
+          type="Rocker"
+          img="url test"
+          description="It is a rocket"
+          reserved
+        />
+      </Provider>,
+    );
+    expect(screen.getByText('Reserved')).toBeInTheDocument();
+  });
+
   it('should change to reserve rocket', () => {
     render(
       <Provider store={store}>
