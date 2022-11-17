@@ -25,6 +25,7 @@ export const reserveRocket = (payload) => (
 
 const rocketReducer = (state = initialState, action) => {
   let list = [];
+  let reserve = [];
   switch (action.type) {
     case `${GET_ROCKET}/fulfilled`:
       list = action.payload.map((element) => {
@@ -37,6 +38,14 @@ const rocketReducer = (state = initialState, action) => {
         return rocket;
       });
       return [...state, ...list];
+    case `${RESERVE_ROCKET}/fulfilled`:
+      reserve = state.map((element) => {
+        if (element.id !== action.payload) {
+          return element;
+        }
+        return { ...element, reserved: true };
+      });
+      return [...state, ...reserve];
     default:
       return state;
   }
