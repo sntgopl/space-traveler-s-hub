@@ -5,9 +5,13 @@ import ListItem from '../components/ProfileList';
 
 const Profile = () => {
   const missions = useSelector((state) => state.mission);
-  const resultMissions = missions.filter((mission) => mission.reserved);
+  const resultMissions = missions.filter((mission) => mission.reserved).map((mission) => (
+    <ListItem key={mission.id} id={mission.id} name={mission.name} />
+  ));
   const rockets = useSelector((state) => state.rocket);
-  const resultRockets = rockets.filter((rocket) => rocket.reserved);
+  const resultRockets = rockets.filter((rocket) => rocket.reserved).map((rocket) => (
+    <ListItem key={rocket.id} id={rocket.id} name={rocket.name} />
+  ));
   return (
     <div className="profile">
       <Table bordered>
@@ -17,8 +21,7 @@ const Profile = () => {
           </tr>
         </thead>
         <tbody>
-          {resultMissions.map((mission) => (
-            <ListItem key={mission.id} id={mission.id} name={mission.name} />))}
+          {resultMissions}
         </tbody>
       </Table>
       <Table bordered>
@@ -28,8 +31,7 @@ const Profile = () => {
           </tr>
         </thead>
         <tbody>
-          {resultRockets.map((rocket) => (
-            <ListItem key={rocket.id} id={rocket.id} name={rocket.name} />))}
+          {resultRockets}
         </tbody>
       </Table>
     </div>
