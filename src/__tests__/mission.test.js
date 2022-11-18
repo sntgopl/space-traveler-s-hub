@@ -4,9 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import Table from 'react-bootstrap/Table';
-import Mission from './Mission';
-import MissionContainer from './MissionContainer';
-import NavBar from './NavBar';
+import Mission from '../components/Mission';
+import MissionContainer from '../components/MissionContainer';
+import NavBar from '../components/NavBar';
 import store from '../redux/configureStore';
 
 describe('render Mission', () => {
