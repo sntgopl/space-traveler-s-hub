@@ -24,12 +24,16 @@ nav {
 
 .navList ul {
   display: flex;
-  gap: 20px;
   margin: 0;
+}
+
+.navList ul :nth-child(even) {
+  border-right: 1px solid #000;
 }
 
 .navList ul > * {
   text-decoration: none;
+  padding: 0 10px;
 }
 
 .activeLink {
