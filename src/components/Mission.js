@@ -16,10 +16,10 @@ const Mission = ({
         <td>{description}</td>
         <td>
           {!reserved && (
-            <Badge bg="secondary">Non-Active</Badge>
+            <Badge bg="secondary">NOT A MEMBER</Badge>
           )}
           {reserved && (
-            <Badge bg="primary">Active</Badge>
+            <Badge bg="primary">Active Member</Badge>
           )}
         </td>
         <td>

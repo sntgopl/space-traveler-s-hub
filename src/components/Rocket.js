@@ -16,7 +16,7 @@ const Rocket = ({
         <p>
           {' '}
           {reserved && (
-          <Badge bg="secondary">Reserved</Badge>
+          <Badge bg="info">Reserved</Badge>
           )}
           {' '}
           {description}

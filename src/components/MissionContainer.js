@@ -11,7 +11,8 @@ const MissionContainer = () => {
     if (!missions.length) {
       dispatch(getMission());
     }
-  }, [dispatch, missions.length]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <Table striped bordered>
       <thead>

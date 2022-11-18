@@ -10,7 +10,8 @@ const RocketsContainer = () => {
     if (!rockets.length) {
       dispatch(getRocket());
     }
-  }, [dispatch, rockets.length]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       {rockets.map((rocket) => (
