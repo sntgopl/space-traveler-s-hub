@@ -1,6 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import { useSelector } from 'react-redux';
 import '../stylesheets/Profile.css';
+import ListItem from '../components/ProfileList';
 
 const Profile = () => {
   const missions = useSelector((state) => state.mission);
@@ -10,15 +11,25 @@ const Profile = () => {
   return (
     <div className="profile">
       <Table bordered>
-        <h2>My Missions</h2>
+        <thead>
+          <tr>
+            <th>My Missions</th>
+          </tr>
+        </thead>
         <tbody>
-          {resultMissions.map((mission) => (<tr key={mission.id}>{mission.name}</tr>))}
+          {resultMissions.map((mission) => (
+            <ListItem key={mission.id} id={mission.id} name={mission.name} />))}
         </tbody>
       </Table>
       <Table bordered>
-        <h2>My Rockets</h2>
+        <thead>
+          <tr>
+            <th>My Rockets</th>
+          </tr>
+        </thead>
         <tbody>
-          {resultRockets.map((rocket) => (<tr key={rocket.id}>{rocket.name}</tr>))}
+          {resultRockets.map((rocket) => (
+            <ListItem key={rocket.id} id={rocket.id} name={rocket.name} />))}
         </tbody>
       </Table>
     </div>
