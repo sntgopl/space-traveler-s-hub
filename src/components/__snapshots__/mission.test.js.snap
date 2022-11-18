@@ -1,80 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render Mission Container should render 1`] = `
-<div
-  className="table"
-  data-testid="mission"
->
-  <table
-    className="table table-striped table-bordered"
-  >
-    <thead>
-      <tr>
-        <th>
-          Mission
-        </th>
-        <th>
-          Description
-        </th>
-        <th>
-          Status
-        </th>
-        <th>
-          Function
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
-`;
-
 exports[`render Mission should render 1`] = `
-<tr>
-  <td />
-  <td />
-  <td>
-    <span
-      className="badge bg-secondary"
-    >
-      Non-Active
-    </span>
-  </td>
-  <td>
-    <button
-      className="btn btn-outline-secondary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Join Mission
-    </button>
-  </td>
-</tr>
-`;
-
-exports[`render Mission should render 2`] = `
-<tr>
-  <td />
-  <td />
-  <td>
-    <span
-      className="badge bg-secondary"
-    >
-      Non-Active
-    </span>
-  </td>
-  <td>
-    <button
-      className="btn btn-outline-secondary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Join Mission
-    </button>
-  </td>
-</tr>
+<table
+  className="table"
+>
+  <tbody>
+    <tr>
+      <td>
+        Mission test
+      </td>
+      <td>
+        first mission
+      </td>
+      <td>
+        <span
+          className="badge bg-secondary"
+        >
+          Non-Active
+        </span>
+      </td>
+      <td>
+        <button
+          className="btn btn-outline-secondary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Join Mission
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;
 
 exports[`render Nav Bar should render Nav Bar 1`] = `

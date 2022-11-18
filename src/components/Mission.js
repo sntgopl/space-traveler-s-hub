@@ -8,39 +8,42 @@ const Mission = ({
 }) => {
   const dispatch = useDispatch();
   return (
-    <tr>
-      <td>
-        {name}
-      </td>
-      <td>{description}</td>
-      <td>
-        {!reserved && (
-          <Badge bg="secondary">Non-Active</Badge>
-        )}
-        {reserved && (
-          <Badge bg="primary">Active</Badge>
-        )}
-      </td>
-      <td>
-        {!reserved && (
-        <Button
-          onClick={() => dispatch(joinMission(id))}
-          variant="outline-secondary"
-        >
-          Join Mission
-        </Button>
-        )}
-        {reserved && (
-        <Button
-          onClick={() => dispatch(leaveMission(id))}
-          variant="outline-danger"
-        >
-          Leave Mission
-        </Button>
-        )}
+    <tbody>
+      <tr>
+        <td>
+          {name}
+        </td>
+        <td>{description}</td>
+        <td>
+          {!reserved && (
+            <Badge bg="secondary">Non-Active</Badge>
+          )}
+          {reserved && (
+            <Badge bg="primary">Active</Badge>
+          )}
+        </td>
+        <td>
+          {!reserved && (
+            <Button
+              onClick={() => dispatch(joinMission(id))}
+              variant="outline-secondary"
+            >
+              Join Mission
+            </Button>
+          )}
+          {reserved && (
+            <Button
+              onClick={() => dispatch(leaveMission(id))}
+              variant="outline-danger"
+            >
+              Leave Mission
+            </Button>
+          )}
 
-      </td>
-    </tr>
+        </td>
+      </tr>
+    </tbody>
+
   );
 };
 

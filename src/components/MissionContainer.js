@@ -13,29 +13,25 @@ const MissionContainer = () => {
     }
   }, [dispatch, missions.length]);
   return (
-    <div className="table">
-      <Table striped bordered>
-        <thead>
-          <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>Function</th>
-          </tr>
-        </thead>
-        <tbody>
-          {missions.map((mission) => (
-            <Mission
-              key={mission.id}
-              id={mission.id}
-              name={mission.name}
-              description={mission.description}
-              reserved={mission.reserved}
-            />
-          ))}
-        </tbody>
-      </Table>
-    </div>
+    <Table striped bordered>
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Function</th>
+        </tr>
+      </thead>
+      {missions.map((mission) => (
+        <Mission
+          key={mission.id}
+          id={mission.id}
+          name={mission.name}
+          description={mission.description}
+          reserved={mission.reserved}
+        />
+      ))}
+    </Table>
   );
 };
 

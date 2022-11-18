@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
+import Table from 'react-bootstrap/Table';
 import Mission from './Mission';
 import MissionContainer from './MissionContainer';
 import NavBar from './NavBar';
@@ -13,7 +14,15 @@ describe('render Mission', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <Mission />
+          <Table>
+            <Mission
+              key={1}
+              id={1}
+              name="Mission test"
+              description="first mission"
+              reserved={false}
+            />
+          </Table>
         </Provider>,
       )
       .toJSON();
@@ -25,13 +34,15 @@ describe('render Mission', () => {
   it('should render a mission', () => {
     render(
       <Provider store={store}>
-        <Mission
-          key={1}
-          id={1}
-          name="Mission test"
-          description="first mission"
-          reserved={false}
-        />
+        <Table>
+          <Mission
+            key={1}
+            id={1}
+            name="Mission test"
+            description="first mission"
+            reserved={false}
+          />
+        </Table>
       </Provider>,
     );
     expect(screen.getByText('Join Mission')).toBeInTheDocument();
@@ -40,13 +51,15 @@ describe('render Mission', () => {
   it('should render a mission', () => {
     render(
       <Provider store={store}>
-        <Mission
-          key={1}
-          id={1}
-          name="Mission test"
-          description="first mission"
-          reserved
-        />
+        <Table>
+          <Mission
+            key={1}
+            id={1}
+            name="Mission test"
+            description="first mission"
+            reserved
+          />
+        </Table>
       </Provider>,
     );
     expect(screen.getByText('Leave Mission')).toBeInTheDocument();
