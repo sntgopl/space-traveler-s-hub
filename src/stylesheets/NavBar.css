@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.navTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.navTitle img {
+  width: 70px;
+}
+
+.navTitle h1 {
+  margin: 0;
+}
+
+.navList ul {
+  display: flex;
+  margin: 0;
+}
+
+.navList ul :nth-child(even) {
+  border-right: 1px solid #000;
+}
+
+.navList ul > * {
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.activeLink {
+  opacity: 0.5;
+  border-bottom: 1px solid;
+}
