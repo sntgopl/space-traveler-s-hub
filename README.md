@@ -5,7 +5,7 @@
 > We built a webpage with React & Redux where you can reserve a rocket or join a mission using SpaceX API.
 
 ### Live GitHub Page
-[Live]([space-travelers-lobby.netlify.app](https://space-travelers-lobby.netlify.app/profile))
+[Live](https://space-travelers-lobby.netlify.app/profile)
 
 ## Project view:
 > Rockets page view
