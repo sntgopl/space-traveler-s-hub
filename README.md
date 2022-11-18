@@ -1,11 +1,27 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# BookStore
+# Space Traveler's Hub
 
 > We built a webpage with React & Redux where you can reserve a rocket or join a mission using SpaceX API.
 
 ### Live GitHub Page
 [Live](https://dainty-froyo-09035f.netlify.app)
+
+## Project view:
+> Rockets page view
+
+![Screenshot from 2022-11-17 22-59-28](https://user-images.githubusercontent.com/105117832/202614158-6a9c5a34-c865-458a-8d18-a5b7ec479351.png)
+
+
+> Missions page view
+
+![Screenshot from 2022-11-17 22-59-53](https://user-images.githubusercontent.com/105117832/202614178-7ca97e9e-1386-48f7-9ae1-c8ffd9606d9f.png)
+
+
+> My Profile page view
+
+![Screenshot from 2022-11-17 23-00-50](https://user-images.githubusercontent.com/105117832/202614199-f23f450d-5c90-4dbf-bfe8-95a50f68f6e0.png)
+
 
 ## Built With
 
